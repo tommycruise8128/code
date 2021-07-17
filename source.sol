@@ -1267,7 +1267,6 @@ contract CoinToken is ERC20Decimals, ERC20Mintable, ERC20Burnable, ERC1363, Toke
     function _mint(address account, uint256 amount) internal override onlyOwner {
         super._mint(account, amount);
     }
-    
 
     /**
      * @dev Function to stop minting new tokens.
