@@ -1268,10 +1268,6 @@ contract CoinToken is ERC20Decimals, ERC20Mintable, ERC20Burnable, ERC1363, Toke
         super._mint(account, amount);
     }
     
-    // remove transfer delay after launch
-  	function disableTransferDelay() external onlyOwner {
-  	    transferDelayEnabled = false;
-  	}
 
     /**
      * @dev Function to stop minting new tokens.
